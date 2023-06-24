@@ -18,12 +18,12 @@ public class MonthData {
     public int maxSteps(){
         int maxSteps = 0;
         for (int i = 0; i < days.length/2 + 1; i++){
-            int rigth = days[days.length - i-1];
+            int right = days[days.length - i-1];
             int left = days[i];
-            if (left > rigth && left > maxSteps){
+            if (left > right && left > maxSteps){
                 maxSteps = left;
-            }else if (rigth > maxSteps){
-                maxSteps = rigth;
+            }else if (right > maxSteps){
+                maxSteps = right;
             }
         } return maxSteps;
     }

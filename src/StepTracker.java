@@ -41,7 +41,7 @@ public class StepTracker {
         if (newGoal > 0){
             goalByStepsPerDay = newGoal;
         } else {
-            System.out.println("Цель по шагам не может быть меньше 0 или 0");
+            System.out.println("Цель по шагам не может быть меньше нуля или нуль");
         }
     }
 
@@ -62,9 +62,7 @@ public class StepTracker {
                 converter.convertToKm(monthData[month].sumStepsFromMonth()));
         System.out.println("Количество сожжённых килокалорий - " +
                 converter.convertStepsToKilocalories(monthData[month].sumStepsFromMonth()));
-        System.out.println("Лучшая серия: максимальное количество подряд идущих дней," +
-                " в течение которых количество шагов за день было равно или выше целевого. - " +
-                monthData[month].bestSeries(goalByStepsPerDay));
+        System.out.println("Лучшая серия: " + monthData[month].bestSeries(goalByStepsPerDay));
         System.out.println();
     }
 

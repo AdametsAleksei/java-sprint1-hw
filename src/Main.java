@@ -1,5 +1,8 @@
 import java.util.Scanner;
 
+/* Привет, спасибо за положительный отзыв, очень приятно! :)
+   Вроде всё поправил. */
+
 public class Main {
 
     public static void main(String[] args) {
